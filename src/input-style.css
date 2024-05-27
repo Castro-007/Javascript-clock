@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    .hand{
+        width: 50%;
+        height: 6px;
+        border-radius: 6px;
+        background-color: crimson;
+        position: absolute;
+        top:calc(50% - 3px);
+        transform-origin: 100%;
+        transform:rotate(90deg);
+        transition: 0.05s;
+        transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    }
+
+    
+
+    .min-hand{
+        width:40%;
+        margin-left:10%;
+    }
+    
+    .clock{
+        transform: translateY(-3px);
+    }
+
+
+}
